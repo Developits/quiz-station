@@ -5,11 +5,12 @@ import Question from "../Question/Question";
 const Questions = () => {
   const questionData = useLoaderData();
   const { questions } = questionData.data;
+  console.log(questions);
   return (
-    <div >
+    <div>
       <h1>This is questions</h1>
-      {questions.map((Q, idx) => (
-        <Question key={idx} Q={Q}></Question>
+      {questions.map((QuizQ) => (
+        <Question key={QuizQ.id} QuizQ={QuizQ}></Question>
       ))}
     </div>
   );
