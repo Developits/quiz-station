@@ -36,7 +36,7 @@ function App() {
           element: <Statistics></Statistics>,
         },
         {
-          path: "*",
+          path: "/*",
           element: (
             <div>
               <h1>This route does not exist.</h1>

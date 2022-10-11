@@ -12,7 +12,7 @@ const Option = ({ option, correctAnswer }) => {
   };
   return (
     <div>
-      <div className="bg-[#AAC4FF] p-7 mt-4 rounded-xl border-2 border-sky-500">
+      <div className="bg-[#AAC4FF] p-7 mt-4 rounded-xl  hover:bg-[#B1B2FF] border-2 border-sky-500">
         <input
           onClick={handleCorrectAnswer}
           id="default-radio-1"
