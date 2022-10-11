@@ -2,65 +2,62 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="mx-6">
+    <div className="mx-6 pb-6">
       <header>
-        <h1 className="mt-[40px] text-center text-xl">
-          Some important question about Javascript
+        <h1 className="mt-[40px] text-xl">
+          Some important question about React.
         </h1>
       </header>
       <main>
-        <div className="mt-[20px] p-6 bg-gray-200 border-2 rounded-xl">
-          <h3>Question 01: How does react work?</h3>
-          <p>
-            <strong>Ans</strong>: A virtual dom is a lightweight JavaScript
-            object that is a copy of the real dom. What react does under the
-            hood? When you program ui changes / events in react, it applies
-            changes to virtual dom and then changes real dom for the virtual
-            one. To understand why this was invented you would have to read more
-            about how browsers handle changes to real dom and traditional
-            changes using simple js or jquery. In simple terms each change to
-            dom nodes causes browser to rerender, this is synchronized change,
-            so if by using js you cause change to multiple nodes each change is
-            a rerender and css style recalculation. What react does is an
-            aggregation of these changes and then swiping that changes in one go
-            instead of 15 for example. This is what causes react.js to preform
-            better in heavy changeable user interfaces (for example single page
-            applications where sometimes you change almost every node in js)
-          </p>
-        </div>
-        <div className="mt-[20px] p-6 bg-gray-200 border-2 rounded-xl">
-          <h3>
-            Question 02 : What are the differences between props and state ?
+        <div className="mt-[20px] p-6 bg-[#AAC4FF] border-2 rounded-xl">
+          <h3 className="font-bold">
+            Question 01: what is the purpose of react router?
           </h3>
           <p>
-            <strong>Ans</strong>: The state is an updatable structure that is
-            used to contain data or information about the component and can
-            change over time. The change in state can happen as a response to
-            user action or system event. It is the heart of the react component
-            which determines the behavior of the component and how it will
-            render. A state must be kept as simple as possible. It represents
-            the component's local state or information. It can only be accessed
-            or modified inside the component or by the component directly.
+            <strong>Ans</strong>: React Router is a standard library for routing
+            in React. It enables the navigation among views of various
+            components in a React Application, allows changing the browser URL,
+            and keeps the UI in sync with the URL. Let us create a simple
+            application to React to understand how the React Router works. The
+            application will contain three components: home component, about a
+            component, and contact component. We will use React Router to
+            navigate between these components.At its heart, React Router is a
+            state container for the current location , or URL. It keeps track of
+            the location and renders different Route s as it changes, and it
+            also gives you tools to update the location using Link s and the
+            history API.
           </p>
         </div>
-        <div className="mt-[20px] p-6 bg-gray-200 border-2 rounded-xl">
-          <h3>
-            Question 03 : useEffect is used for other purpose than loading data?
-          </h3>
+        <div className="mt-[20px] p-6 bg-[#AAC4FF]  border-2 rounded-xl">
+          <h3 className="font-bold">Question 02 : how context api works ?</h3>
           <p>
-            <strong>Ans</strong>: 5 use cases of the useEffect ReactJS hook:
-            <br />
-            1) Running on state change: validating input field.
-            <br />
-            2) Running on state change: live filtering.
-            <br />
-            3) Running on state change: trigger animation on new array value.
-            <br />
-            4) Running on props change: update paragraph list on fetched API
-            data update.
-            <br />
-            5) Running on props change: updating fetched API data to get BTC
-            updated price.
+            <strong>Ans</strong>: The React Context API is a way for a React app
+            to effectively produce global variables that can be passed around.
+            This is the alternative to "prop drilling" or moving props from
+            grandparent to child to parent, and so on. Context is also touted as
+            an easier, lighter approach to state management using
+            Redux.React.createContext is all you need. It returns a consumer and
+            a provider. Provider is a component that as it's names suggests
+            provides the state to its children. It will hold the "store" and be
+            the parent of all the components that might need that store.
+            Consumer as it so happens is a component that consumes and uses the
+            state. More information can be found on React's documentation page.
+          </p>
+        </div>
+        <div className="mt-[20px] p-6 bg-[#AAC4FF]  border-2 rounded-xl">
+          <h3 className="font-bold">Question 03 : what is useRef in react?</h3>
+          <p>
+            <strong>Ans</strong>: The useRef hook is the new addition in React
+            16.8. Before proceeding to this article there is a prerequisite to
+            know about the ref in react. The useRef is a hook that allows to
+            directly create a reference to the DOM element in the functional
+            component. The useRef returns a mutable ref object. This object has
+            a property called .current. The value is persisted in the
+            refContainer.current property. These values are accessed from the
+            current property of the returned object. The .current property could
+            be initialised to the passed argument initialValue e.g.
+            useRef(initialValue). The object can persist a value for a full
+            lifetime of the component.
           </p>
         </div>
       </main>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <nav className="bg-slate-400 flex justify-around items-center  h-16">
+      <nav className="bg-[#B1B2FF] flex justify-around items-center  h-16">
         <p className=" text-2xl font-bold">Quiz Station</p>
         <div className="text-lg colo text-white">
           <Link className=" ml-4" to={"/"}>

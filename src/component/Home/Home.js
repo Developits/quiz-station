@@ -1,13 +1,18 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import Quiz from "../Quiz/Quiz";
 
 const Home = () => {
   const quizdata = useLoaderData();
   const { data } = quizdata;
-  console.log(quizdata, data);
+  console.log(data);
   return (
     <div>
-      <h1>This is home.</h1>
+      <div className="grid grid-cols-4  gap-4">
+        {data.map((quiz) => (
+          <Quiz key={quiz.id} quiz={quiz}></Quiz>
+        ))}
+      </div>
     </div>
   );
 };

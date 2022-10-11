@@ -14,12 +14,12 @@ const Statistics = () => {
   const quizdata = useLoaderData();
   console.log(quizdata);
   return (
-    <div className="text-center font-bold text-2xl mt-10">
+    <div className="text-center font-bold text-2xl mt-16">
       <h1>This is statistics of Quiz questions.</h1>
       <LineChart
-        className="mx-auto mt-32"
-        width={600}
-        height={350}
+        className="mx-auto mt-24"
+        width={700}
+        height={400}
         data={quizdata.data}
       >
         <CartesianGrid strokeDasharray="3 3" />
