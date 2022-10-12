@@ -5,6 +5,7 @@ import Home from "./component/Home/Home";
 import Blog from "./component/Blog/Blog";
 import Statistics from "./component/Statistics/Statistics";
 import Questions from "./component/Questions/Questions";
+import Error from "./component/Error/Error";
 function App() {
   const router = createBrowserRouter([
     {
@@ -25,6 +26,7 @@ function App() {
             );
           },
           element: <Questions></Questions>,
+          errorElement: <Error></Error>,
         },
         {
           path: "/blog",
@@ -34,14 +36,6 @@ function App() {
           path: "/statistics",
           loader: () => fetch("https://openapi.programming-hero.com/api/quiz"),
           element: <Statistics></Statistics>,
-        },
-        {
-          path: "///*",
-          element: (
-            <div>
-              <h1>This route does not exist.</h1>
-            </div>
-          ),
         },
       ],
     },
