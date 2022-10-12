@@ -5,7 +5,7 @@ import Option from "../Option/Option";
 const Question = ({ QuizQ, notify }) => {
   const { question, options, correctAnswer } = QuizQ;
   return (
-    <div className="bg-[#D2DAFF] my-2 mx-32 rounded-2xl p-5">
+    <div className="bg-[#D2DAFF] my-2 md:mx-32 mx-4 rounded-2xl p-5">
       <div className="flex justify-between mx-4 py-6 items-center">
         <h1 className="font-bold text-center">Q: {question}</h1>
         <EyeIcon onClick={() => notify(correctAnswer)} className="h-6 w-6" />
