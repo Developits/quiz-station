@@ -17,7 +17,7 @@ const Statistics = () => {
   return (
     <div className="text-center  font-bold text-2xl mt-16">
       <h1>This is statistics of Quiz questions.</h1>
-      <ResponsiveContainer className="mx-auto mt-24" width="70%" height={400}>
+      <ResponsiveContainer className="mx-auto mt-24" width="60%" height={400}>
         <LineChart
           className="mx-auto mt-24"
           width={700}
