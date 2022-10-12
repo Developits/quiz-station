@@ -8,9 +8,9 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex items-center mx-4 my-16">
+      <div className="md:flex items-center mx-4 my-16">
         <div>
-          <p className="font-semibold text-left px-36">
+          <p className="font-semibold md:text-left md:px-36">
             <span className="font-bold text-4xl">
               Welcome to <br />
               Interactive Quiz Station

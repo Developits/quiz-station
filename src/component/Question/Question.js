@@ -10,7 +10,7 @@ const Question = ({ QuizQ, notify }) => {
         <h1 className="font-bold text-center">Q: {question}</h1>
         <EyeIcon onClick={() => notify(correctAnswer)} className="h-6 w-6" />
       </div>
-      <div className="mx-3 text-justify grid grid-cols-2 gap-5">
+      <div className="md:grid grid-cols-2 gap-5 mx-3 text-justify ">
         {options.map((option, idx) => (
           <Option
             key={idx}
